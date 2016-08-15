@@ -1,0 +1,39 @@
+<ion-view view-title="Datos" hide-nav-bar="true">
+
+<!-- Menu no repetido de la clase abstracta --> 
+	<ion-header-bar class="bar bar-header bar-positive">
+		<a class="button button-icon ion-ios-undo button-clear" href="#/app/autos"></a>
+        <h1 class="title">Datos</h1>
+         <button class="button button-icon button-clear ion-information-circled" ng-click="showAlert()">
+        </button>
+      </ion-header-bar>
+
+  <ion-content ng-class="{'inactivo': !data.estado}"> 
+   <div class="mi_contenedor">
+  	<div class="img_rounded"><img src="{{data.foto}}"></div>
+    <h2>{{data.titulo}}</h2>
+    <p>{{data.descripcion}}</p>
+    <br/>
+    <table style="width:100%">
+  <tr>
+    <td><strong>Año:</strong></td>
+    <td>{{data.anos}}</td>    
+  </tr>
+  <tr>
+    <td><strong>Color:</strong></td>
+    <td>{{data.color}}</td> 
+  </tr>
+  <tr>
+     <td><strong>Costo:</strong></td>
+    <td>{{data.costo}}</td> 
+  </tr>
+   <tr>
+     <td><strong>Pais:</strong></td>
+    <td>{{data.pais}}</td> 
+  </tr>
+</table>
+<br/>
+  <a class="button button-block button-positive" href="#/app/editar/{{data.id}}">Editar</a>
+   </div> 
+  </ion-content>
+</ion-view>

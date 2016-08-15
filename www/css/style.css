@@ -1,0 +1,36 @@
+/* Empty. Add your own CSS if you like */
+ion-content.inactivo{
+	opacity: 0.4;
+	background-color: #fdf2d1;
+}
+
+.mi_contenedor{
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.img_rounded{
+	border-radius: 8px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.img_rounded img{
+	width: 100%;
+}
+
+.mi_contenedor h2{
+	text-align: center;
+	background-color: #fdf2d1;
+}
+
+#map {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.scroll {
+  height: 100%;
+}

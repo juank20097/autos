@@ -1,0 +1,22 @@
+<ion-view view-title="Localizacion" hide-nav-bar="true">
+
+	<!-- Menu no repetido de la clase abstracta --> 
+	<ion-header-bar class="bar bar-header bar-positive">
+		<a class="button button-icon ion-ios-undo button-clear" href="#/app/sitios"></a>
+        <h1 class="title">Lugar</h1>
+         <button class="button button-icon button-clear ion-information-circled" ng-click="showAlert()">
+        </button>
+      </ion-header-bar>
+
+  <ion-content>
+    <div id="map" data-tap-disabled="true"></div>
+</ion-content>
+
+  <ion-footer-bar class="bar bar-stable bar-positive">
+    
+        <a ng-click="restart()" class="button button-icon icon ion-ios-navigate-outline"></a>
+
+        <a ng-click="trazarRuta()" class="button button-icon icon ion-fork-repo"></a>
+        
+    </ion-footer-bar>
+</ion-view>

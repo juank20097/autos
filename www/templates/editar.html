@@ -1,0 +1,50 @@
+<ion-view view-title="Editar" hide-nav-bar="true">
+
+<!-- Menu no repetido de la clase abstracta --> 
+	<ion-header-bar class="bar bar-header bar-positive">
+		<a class="button button-icon ion-ios-undo button-clear" href="#/app/datos/{{data.id}}"></a>
+        <h1 class="title">{{data.titulo}}</h1>
+         <button class="button button-icon button-clear ion-information-circled" ng-click="showAlert()">
+        </button>
+      </ion-header-bar>
+
+  <ion-content>
+    <form ng-submit="sendForm()">
+  <div class="list">
+  	<div class="item item-divider">Datos del Coche</div>
+  	<label class="item item-input">
+    	<span class="input-label">Pais:</span>
+    	<input type="text" placeholder="{{data.pais}}" ng-model="pais">
+    </label>
+    <label class="item item-input">
+    	<span class="input-label">Años:</span>
+    	<input type="text" placeholder="{{data.anos}}" ng-model="ano">
+    </label>
+     <label class="item item-input">
+    	<span class="input-label">Color:</span>
+    	<input type="text" placeholder="{{data.color}}" ng-model="color">
+    </label>
+    <label class="item item-input">
+    	<span class="input-label">Costo:</span>
+    	<input type="numbre" placeholder="{{data.costo}}" ng-model="costo">
+    </label>
+     <label class="item item-input">
+    	<span class="input-label">Descripcion:</span>
+    	<textarea ng-model="descripcion"></textarea>
+    </label>
+     <div class="item item-toggle">
+    	<label class=" toggle toggle-positive">
+    		<input type="checkbox" placeholder="{{data.estado}}">
+    		<div class="track">
+    			<div class="handle"></div>
+    		</div>
+    	</label>
+    	Activo:
+    </div>
+  </div>
+  <div class="mi_contenedor">
+  <button class="button button-block button-positive" type="submit" href="#/app/home">Guardar</button>
+  </div>
+  </form>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,50 @@
+<ion-view view-title="Sitios" hide-nav-bar="true">
+
+	<!-- Menu no repetido de la clase abstracta --> 
+	<ion-header-bar class="bar bar-header bar-positive">
+		<a class="button button-icon ion-ios-undo button-clear" href="#/app/home"></a>
+        <h1 class="title">Sitios</h1>
+         <button class="button button-icon button-clear ion-information-circled" ng-click="showAlert()">
+        </button>
+      </ion-header-bar>
+
+  <div class="bar has-header item-input-inset">
+  <label class="item-input-wrapper">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="search" placeholder ng-model="query">
+  </label>
+ </div>
+
+  <ion-content class="padding">
+  <br/>
+  <br/>
+     <ion-list class="list">
+    	<!-- Creacion de items con nombre imagen -->
+        <ion-item class="item-icon-right" ng-click="atuntaqui()" menu-close href="#/app/gmap/1">
+          Atuntaqui
+          <i class="icon ion-map positive"></i>
+        </ion-item>
+        <!-- Creacion de items con nombre imagen -->
+        <ion-item class="item-icon-right" ng-click="Map()" menu-close href="#/app/gmap/2">
+          Ibarra
+          <i class="icon ion-map positive"></i>
+        </ion-item>
+        <!-- Creacion de items con nombre imagen -->
+        <ion-item class="item-icon-right" ng-click="Map()" menu-close href="#/app/gmap/3">
+          Otavalo
+          <i class="icon ion-map positive"></i>
+        </ion-item>
+        <!-- Creacion de items con nombre imagen -->
+        <ion-item class="item-icon-right" ng-click="Map()" menu-close href="#/app/gmap/4">
+          Urcuqui
+          <i class="icon ion-map positive"></i>
+        </ion-item>
+        <!-- Creacion de items con nombre imagen -->
+        <ion-item class="item-icon-right" ng-click="Map()" menu-close href="#/app/gmap/5">
+          Pimampiro
+          <i class="icon ion-map positive"></i>
+        </ion-item>
+    </ion-list>
+    
+  </ion-content>
+</ion-view>
